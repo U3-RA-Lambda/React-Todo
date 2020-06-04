@@ -72,8 +72,10 @@ class App extends React.Component {
     console.log('rendering...')
     return (
       <div className="container">
-        <div className="header">
+        <div className="title">
           <h2>~ Too-dah List! ~</h2>
+        </div>
+
           <TodoForm
             addItem={this.addItem}
             formState={this.state.form} // form state and handlechanges are the only ones that need formState
@@ -81,11 +83,11 @@ class App extends React.Component {
             clearCompleted={this.clearCompleted}
             onSubmit={this.submitItem}
           />
-        </div>
-        <TodoList
-          taskItems={this.state.taskItems}
-          toggleItem={this.toggleItem}
-        />
+
+          <TodoList
+            taskItems={this.state.taskItems}
+            toggleItem={this.toggleItem}
+          />
       </div>
     );
   }

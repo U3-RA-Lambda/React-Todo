@@ -51,7 +51,67 @@ a:hover { text-decoration: underline }
     width: 380px;
 }
 
+.item {
+    border: none;
+    padding: 3%;
+    margin: 4%;
+    width: 100%;
+    border-radius: 7px;
+    background: linear-gradient(315deg, #f08686, #e6d4d4);
+    box-shadow:  -8px -8px 16px #d4c3c3, 
+             8px 8px 16px #ffffff;
+}
 
 .item.completed {
     text-decoration: line-through;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+    
+}
+
+.title h2 {
+    font-size: 32px;
+    display: flex;
+    height: 30px;
+    justify-content: center;
+    margin-bottom: 20px;
+    border: none;
+    margin: 10px;
+    border-radius: 4px;
+    background: linear-gradient(225deg, #ffffff, #e6e6e6);
+    box-shadow:  -5px 5px 10px #d9d9d9, 
+             5px -5px 10px #ffffff;
+    
+}
+
+label {
+    border: none;
+    margin: 10px;
+    border-radius: 4px;
+    background: linear-gradient(225deg, #ff8d8d, #e6e6e6);
+    box-shadow:  -5px 5px 10px #d9d9d9, 
+             5px -5px 10px #ffffff;
+}
+
+button {
+    border: none;
+    margin: 5px;
+    border-radius: 12px;
+    background: linear-gradient(225deg, #ffffff, #e6e6e6);
+    box-shadow:  -5px 5px 10px #d9d9d9, 
+             5px -5px 10px #ffffff;
+}
+
+#addTask {
+    border: none;
+    margin: 5px;
+    padding: 8%;
+    border-radius: 12px;
+    background: linear-gradient(225deg, #ffffff, #e6e6e6);
+    box-shadow:  -5px 5px 10px #d9d9d9, 
+             5px -5px 10px #ffffff;
 }

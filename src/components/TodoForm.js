@@ -7,16 +7,17 @@ class TodoForm extends React.Component {
 
       return (
         <form onSubmit={this.props.onSubmit}>
-        <label htmlFor='addTask'>Add task:</label>
+        <label htmlFor='addTask'>Task Item:</label>
             <input
                 type='text'
                 id='addTask'
                 name='name'
-                placeholder='Add a new task...'
+                placeholder='Write task here'
                 value={this.props.formState.name}  // this.state.form on app.js
                 onChange={this.props.onChange}
             />
-          <button type='submit' className='submitTask'>Add task to list</button>
+
+          <button type='submit'>Add Task</button>
 
           <button className="clear-btn" onClick={this.props.clearCompleted}>
             Clear Completed
